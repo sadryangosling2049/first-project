@@ -11,10 +11,10 @@
 <body>
   <div class="page">
     <header class="header flex-row position-relative">
-      <div class="header__left flex-column justify-content-space-between border-content">
-        <div class="header__logo"></div>
-        <p class="header__title border-content">Научиться учиться</p>
-        <p class="header__end">Какие современные и эффективные подходы к обучению
+      <div class="header__left flex-column justify-content-space-between">
+        <div class="header__logo header__logo_header"></div>
+        <p class="header__title">Научиться учиться</p>
+        <p class="header__end text-style-3">Какие современные и эффективные подходы к обучению
           вы можете использовать для своей жизни?<a href="#" class="header__end_link"> Узнать ➝</a></p>
       </div>
       <div class="header__right">
@@ -24,6 +24,7 @@
     </header>
     <main class="content">
       <section class="description">
+        <div class="description"></div>
       </section>
 
       <section class="digits">
@@ -36,26 +37,35 @@
       </section>
     </main>
     <footer class="footer">
-      <logo></logo>
-      <p>Андрей Гослинг</p>
-      <nav>
-        <ul>
-          <h2>О практикуме</h2>
-          <li>Главная</li>
-          <li>Концепция</li>
-          <li>Наставники</li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <h2>Соцсети</h2>
-          <li>Facebook</li>
-          <li>Вконтакте</li>
-          <li>Instagram</li>
-        </ul>
-      </nav>
+      <div class="flex-row  footer__main">
+        <div class="flex-column footer__main_left">
+          <div class="footer__logo"></div>
+          <p class="text-style-3">&copy Andrey Gosling</p>
+        </div>
+        <div class="flex-row footer__main_right">
+          <div class="flex-column">
+            <nav>
+              <title__footer class="title__footer">О Практикуме</title__footer>
+              <ul class="text-style-2 no-bullets">
+                <li><a href="#" class="footer__link">Главная</a></li>
+                <li><a href="#" class="footer__link">Концепция</a></li>
+                <li><a href="#" class="footer__link">Наставники</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex-column"></div>
+            <nav>
+              <title__footer class="title__footer">Соцсети</title__footer>
+              <ul class="text-style-2 no-bullets">
+                <li><a href="#" class="footer__link"><img src="images/facebook_color_white.svg" class="footer-image-overlay"/> Facebook</a></li>
+                <li><a href="#" class="footer__link"><img src="images/vk_color_white.svg" class="footer-image-overlay"/> Вконтакте</a></li>
+                <li><a href="#" class="footer__link"><img src="images/instagram_color_white.svg" class="footer-image-overlay"/> Instagram</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
-
 </html>

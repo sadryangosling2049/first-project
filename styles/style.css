@@ -48,6 +48,7 @@ body {
   height: 568px;
   width: 568px;
   background-color: rgb(0, 132, 255);
+  background-size: cover;
   position: absolute;
   z-index: -2;
   top: 64px;
@@ -71,6 +72,10 @@ body {
   min-height: 32px;
   background-image: url("/images/logo_place_header.svg");
   background-repeat: no-repeat;
+}
+
+.header__logo_header
+{
   position: absolute;
   left: 64px;
   top: 30px;
@@ -84,10 +89,7 @@ body {
   margin-left: 64px;
 }
 
-
 .header__end {
-  font-size: 18px;
-  line-height: 25px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -103,6 +105,13 @@ body {
   color: red;
 }
 
+.description {
+  background-color: aquamarine;
+  width: 100%;
+  height: 400px;
+  min-width: 400px;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -114,8 +123,70 @@ body {
 .footer {
   background-color: aqua;
   width: 100%;
-  height: 60vh;
-  min-height: 50vh;
+  height: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.857);
+}
+
+.footer__main {
+  width: 90%;
+  height: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__main_left {
+  justify-content: space-between;
+  width: 60%;
+  height: 200px;
+  min-height: 200px;
+  flex-shrink: 3;
+
+}
+
+.footer__main_right {
+  justify-content: space-between;
+  width: 40%;
+  height: 200px;
+  min-height: 200px;
+  justify-content: space-around;
+}
+
+.footer__logo {
+  min-width: 228px;
+  min-height: 32px;
+  background-image: url("/images/logo_place_footer.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-image-overlay:hover {
+  background-color: red;
+  border-radius: 30%;
+}
+
+.footer__link:hover {
+  color: red;
+}
+
+.text-style-3 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.text-style-2 {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .flex-row {
@@ -134,4 +205,17 @@ body {
 
 .position-relative {
   position: relative;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.title__footer {
+ font-weight: 500;
+ margin-left: 40px;
+}
+
+.no-bullets {
+  list-style: none;
 }
