@@ -95,11 +95,6 @@ body {
   width: 388px;
 }
 
-.header__end_link {
-  text-decoration: none;
-  color: rgb(119, 119, 243);
-}
-
 .header__end_link:hover {
   color: red;
 }
@@ -143,14 +138,12 @@ body {
   width: 100%;
   height: 800px;
   min-height: 800px;
-  border: 1px solid red;
 }
 
 .table-style {
   width: 1100px;
   min-width: 1100px;
   height: 500px;
-  border: 1px solid red;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: end;
@@ -163,11 +156,10 @@ body {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
-  border: 1px solid red;
   height: 70px;
   min-height: 70px;
   width: 60%;
-  padding-top: ;
+  margin-bottom: 20px;
 }
 
 .section-subtitle-style {
@@ -177,14 +169,12 @@ body {
   line-height: 34px;
   font-size: 24px;
   font-weight: 300;
-  border: 1px solid red;
   width: 60%;
   height: 30px;
   min-height: 30px;
 }
 
 .cell {
-  border: 1px solid red;
   width: 250px;
   min-width: 250px;
   height: 180px;
@@ -203,6 +193,61 @@ body {
   font-weight: 100;
   padding-top: 20px;
 }
+
+.feynman {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  top: 100px;
+  background-color: #f2f2f2;
+
+}
+
+.feynman-image {
+  width: 867px;
+  height: 637px;
+  background-image: url("/images/feynman.png");
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.feynman-title {
+  width: 648px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+  z-index: 2;
+  text-align: center;
+}
+
+.feynman-subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: lighter;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.feynman-info {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: lighter;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -335,4 +380,9 @@ body {
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(119, 119, 243);
 }
