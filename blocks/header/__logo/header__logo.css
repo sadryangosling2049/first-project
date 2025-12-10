@@ -1,0 +1,6 @@
+.header__logo {
+  min-width: 228px;
+  min-height: 32px;
+  background-image: url("/images/logo_place_header.svg");
+  background-repeat: no-repeat;
+}

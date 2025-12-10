@@ -1,0 +1,8 @@
+.footer__main_left {
+  justify-content: space-between;
+  width: 60%;
+  height: 200px;
+  min-height: 200px;
+  flex-shrink: 3;
+
+}

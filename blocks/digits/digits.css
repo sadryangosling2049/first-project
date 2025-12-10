@@ -1,0 +1,9 @@
+.digits {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  min-height: 700px;
+  margin: 100px auto;
+}

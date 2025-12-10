@@ -1,0 +1,9 @@
+.logo-zone__image {
+  width: 270px;
+  height: 38px;
+  background-size: contain;
+  align-content: center;
+}
+.logo-zone__image:hover {
+  filter: drop-shadow(5px 5px 7px red);
+}

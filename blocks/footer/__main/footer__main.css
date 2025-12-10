@@ -1,0 +1,8 @@
+.footer__main {
+  width: 90%;
+  height: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

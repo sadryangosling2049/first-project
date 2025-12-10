@@ -1,0 +1,11 @@
+.section-subtitle-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 300;
+  width: 60%;
+  height: 30px;
+  min-height: 30px;
+}

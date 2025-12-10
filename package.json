@@ -1,0 +1,25 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "css-to-bem-file-structure styles/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadryangosling2049/first-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sadryangosling2049/first-project/issues"
+  },
+  "homepage": "https://github.com/sadryangosling2049/first-project#readme",
+  "devDependencies": {
+    "css-to-bem-file-structure": "^0.0.5"
+  }
+}

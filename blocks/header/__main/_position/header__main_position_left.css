@@ -1,0 +1,9 @@
+.header__main_position_left {
+  height: 100vh;
+  min-height: 300px;
+  max-height: 756px;
+  width: 50%;
+  background-color: rgb(233, 232, 232);
+  justify-content: center;
+  /* выше установили ограничения для секции */
+}

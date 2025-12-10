@@ -1,0 +1,7 @@
+.resourses {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: fit-content;
+}

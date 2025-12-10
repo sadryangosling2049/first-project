@@ -1,3 +1,61 @@
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/Ibmplexserif.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/Ibmplexserif.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/Ibmplexserif.ttf) format('truetype');
+  font-family: 'IBM Plex Serif';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/ubuntu.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/ubuntu.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/ubuntu.ttf) format('truetype');
+  font-family: 'Ubuntu';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/istokregular.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/istokregular.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/istokregular.ttf) format('truetype');
+  font-family: 'Istok Web';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/Ibmplexserifsemibold.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/Ibmplexserifsemibold.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/Ibmplexserifsemibold.ttf) format('truetype');
+  font-family: 'IBM Plex Serif';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/ubuntubold.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/ubuntubold.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/ubuntubold.ttf) format('truetype');
+  font-family: 'Ubuntu';
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(https://pictures.s3.yandex.net/fonts/istokbold.woff2) format('woff2'),
+    url(https://pictures.s3.yandex.net/fonts/istokbold.woff) format('woff'),
+    url(https://pictures.s3.yandex.net/fonts/istokbold.ttf) format('truetype');
+  font-family: 'Istok Web';
+  font-weight: bold;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +87,7 @@ h6 {
   width: 100%;
   background-color: rgb(233, 232, 232);
   z-index: 0;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -62,7 +121,7 @@ h6 {
   z-index: -2;
   bottom: 124px;
   right: 0;
-  ;
+  animation: rotation 20s linear infinite;
 }
 
 .header__image {
@@ -188,8 +247,7 @@ h6 {
   flex-wrap: wrap;
   column-gap: 100px;
   justify-content: center;
-  min-height: fit-content;
-  margin-bottom: 100px;
+  height: fit-content;
 }
 
 .cards__item {
@@ -232,14 +290,64 @@ h6 {
   margin: 0 auto;
 }
 
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.video-main {}
+
+.iframes {
+  position: relative;
+  bottom: -60px
+}
+
+.iframe {
+  gap: 20px;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 540px;
+  min-width: 784px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oakley__main {
+  width: 80%;
+  min-height: fit-content;
+  min-width: 784px;
+}
+
+.oakley__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  padding-right: 150px;
+  margin-top: 0;
+  color: rgb(119, 119, 243);
+
+}
+
+.oakley__main_text {
+  width: 100%;
+  min-height: fit-content;
+}
 
 .digits {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: 700px;
+  height: fit-content;
   min-height: 700px;
+  margin: 100px auto;
 }
 
 .table-style {
@@ -327,6 +435,76 @@ h6 {
   top: 50%;
 }
 
+.khan {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.khan__main {
+  width: 80%;
+  min-height: fit-content;
+  top: 105px;
+  background-color: #f2f2f2;
+  margin-top: 100px;
+}
+
+.khan__author {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: lighter;
+}
+
+.khan__title {
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.khan__description {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: lighter;
+  width: 790px;
+  margin-bottom: 36px;
+}
+
+.khan__description_author {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+.khan__description_author-info {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: lighter;
+  margin-bottom: 68px;
+}
+
+.khan__image {
+  width: 620px;
+  height: 680px;
+  background-image: url("/images/khan-book.jpg");
+  background-repeat: no-repeat;
+  margin-right: 48px;
+}
+
+
+.khan__buy-link {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: lighter;
+  right: 48px;
+  top: 50%;
+}
+
+
 .kaufman {
   color: white;
   display: flex;
@@ -377,6 +555,42 @@ h6 {
   z-index: -1;
   right: -210px;
   top: 0;
+  animation: rotation 20s linear infinite;
+}
+
+.resourses {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.resourses-main {
+  display: flex;
+}
+
+.logo-zone {
+  margin-bottom: 217px;
+  margin-top: 80px;
+}
+
+.logo-zone__item {
+  width: 270px;
+  min-width: 270px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-zone__image {
+  width: 270px;
+  height: 38px;
+  background-size: contain;
+  align-content: center;
+}
+
+.logo-zone__image:hover {
+  filter: drop-shadow(5px 5px 7px red);
 }
 
 .footer {

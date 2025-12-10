@@ -1,0 +1,7 @@
+.footer__main_right {
+  justify-content: space-between;
+  width: 40%;
+  height: 200px;
+  min-height: 200px;
+  justify-content: space-around;
+}

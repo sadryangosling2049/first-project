@@ -1,0 +1,6 @@
+.logo-zone__item {
+  width: 270px;
+  min-width: 270px;
+  display: flex;
+  justify-content: space-around;
+}
